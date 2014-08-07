@@ -72,31 +72,137 @@
 				</section>
 
 				<section>
-					<h2>What are Coding Standards?</h2>
+					<section>
+						<h2>What are Coding Standards?</h2>
+					</section>
+
+					<section>
+						<h2>What are Coding Standards?</h2>
+						<p>Coding Styles mutually agreed upon to be followed by team or community<br/>
+							Cover things like: </p>
+						<ul>
+							<li>File Organization</li>
+							<li>Code Comments</li>
+							<li>Indentation</li>
+							<li>Statements/Loops</li>
+							<li>White Space</li>
+							<li>Naming Conventions</li>
+							<li>Tabs vs Spaces</li>
+							<li>etc</li>
+						</ul>
+					</section>
+
 				</section>
 
 				<section>
 					<h2>Why do we need coding standards?</h2>
+					<ul>
+						<li>Readability</li>
+						<li>Maintainability</li>
+					</ul>
+					<p>Benefits:</p>
+					<ul>
+						<li>Consistency</li>
+						<li>Collective Ownership</li>
+						<li>Peer Review</li>
+					</ul>
+					<h2>A tale of two codebases</h2>
+					<p>
+						It was the best of times, it was the worst of times...
+					</p>
 				</section>
 
 				<section>
 					<h2>Methods to enforce coding standards?</h2>
+					Sometimes referred to as Static Analysis Tools
+					<ul>
+						<li><a href="http://checkstyle.sourceforge.net/">CheckStyle (Java)</a></li>
+						<li><a href="http://www.gimpel.com/html/pcl.htm">PC-Lint (C/C++)</a></li>
+						<li><a href="http://www.jslint.com/">JSLint (JavaScript)</a> (<a href="https://github.com/douglascrockford/JSLint">Github</a>)</li>
+						<li><a href="http://jshint.com/">JSHint (JavaScript)</a> (<a href="https://github.com/jshint/jshint/">Github</a>)</li>
+						<li><a href="http://www.squizlabs.com/php-codesniffer">PHP CodeSniffer</a> (<a href="https://github.com/squizlabs/PHP_CodeSniffer">Github</a>)</li>
+					</ul>
 				</section>
 
 				<section>
-					<h2>PHP CodeSniffer</h2>
+					<section>
+						<h2>PHP CodeSniffer</h2>
+					</section>
+
+					<section>
+						<h2>Standards</h2>
+						The wonderful thing about standards is that there are so many of them to choose from. --Grace Hopper (among others)
+						<ul>
+							<li>Zend</li>
+							<li>PSR-1</li>
+							<li>PSR-2</li>
+							<li>PEAR</li>
+							<li>WordPress</li>
+						</ul>
+					</section>
+
+
+					<section>
+						<h2>Sniffs</h2>
+						<p>Standards are made of groups of sniffs dictated by ruleset.xml</p>
+						<p>A sniff tests a basic coding practice</p>
+					</section>
+
+					<section>
+						<h2>Ruleset.xml</h2>
+					</section>
+
+					<section>
+						<h2>How it works</h2>
+						Tokenizers (PHP, JS, CSS)
+
+					</section>
+
+					<section>
+						<h2>Sample Sniff</h2>
+						<pre style="font-size:.9em;"><code style="margin-left: -10%; margin-right: -10%; max-height: 750px;">
+Code Goes HERE
+						</code></pre>
+
+					</section>
 				</section>
 
 				<section>
-					<h2>PHPCS at the command line</h2>
+					<section>
+						<h2>PHPCS at the command line</h2>
+					</section>
+
+					<section>
+						phpcs -i ( What Coding Standards are available )
+						phpcs --standard=PSR2 &lt;filename&gt; (Run on file against specified standard)
+					</section>
 				</section>
 
 				<section>
-					<h2>SublimeText integration</h2>
+					<section>
+						<h2>SublimeText integration</h2>
+						<br/>Sublime-phpcs
+						<br/><a href="https://github.com/benmatselby/sublime-phpcs">Github</a>
+						<br/><a href="https://sublime.wbond.net/packages/Phpcs">Sublime Package Control</a>
+						<br/><a href="https://gist.github.com/crazyjaco/18888c5a028ba0c56d2f">Gist w/ Windows Settings</a>
+					</section>
+
+					<section>
+						Demo
+					</section>
 				</section>
 
 				<section>
 					<h2>Enforcing with Git</h2>
+					global git config
+				</section>
+
+				<section>
+					<h2>Enforcing Coding Standards Across Teams</h2>
+					<p>Starts from the moment your team members get their laptops
+					<p>Automated checks should be in place at every step of development
+					<p>Check early. Check often.
+					<p>It will only succeed if everyone buys in (or is forced to!)
 				</section>
 
 				<section>
@@ -117,10 +223,7 @@
 				</section>
 
 				<section>
-					<h2>A tale of two codebases</h2>
-					<p>
-						It was the best of times, it was the worst of times...
-					</p>
+
 
 					<aside class="notes">
 						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
