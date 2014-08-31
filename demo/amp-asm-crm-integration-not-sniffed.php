@@ -100,10 +100,9 @@ class AMP_ASM_CRM_Integration {
 	function amp_asm_crm_whitepapers($entry, $form) {
 		$url = 'http://analytics.clickdimensions.com/forms/h/a6pyzMUCqUbtV8jI4re5A';
 
-		if ( 'Whitepages Form' === $form['title'] ) {
+		if('Whitepages Form' === $form['title']){
 			$response = wp_remote_post(
-					$url,
-					array(
+					$url, array(
 						'body' => array(
 							'firstname' => $entry['2'],
 							'lastname' => $entry['3'],
@@ -113,16 +112,15 @@ class AMP_ASM_CRM_Integration {
 							'phone' => $entry['7'],
 							'whitepaper' => $entry['8'],
 							'sourcepage' => $entry['9'],
-						)
-					)
+					))
 				);
-			if ( WP_DEBUG ) {
-				if ( is_wp_error( $response ) ) {
-					error_log( 'error' );
-				} else {
-					error_log( 'no error' );
-				}
+		if ( WP_DEBUG){
+			if (is_wp_error($response)){
+				error_log('error');
+			} else {
+				error_log('no error');
 			}
+		}
 		}
 	}
 
